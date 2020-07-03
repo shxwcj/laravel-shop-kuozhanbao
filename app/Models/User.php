@@ -8,12 +8,17 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Watson\Rememberable\Rememberable;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
+    //id->hash数据ID
     use HashIdHelper;
+    //全局搜索过滤
     use Filterable;
+    //数据缓存
+    use Rememberable;
 
     /**
      * The attributes that are mass assignable.
@@ -57,5 +62,10 @@ class User extends Authenticatable implements MustVerifyEmail
     public function filterName(Builder $query, $name)
     {
         return $query->where('name', 'like',"%$name%");
+    }
+
+    public function getAllCached()
+    {
+        return $this->remember($this->cache_expire_in_minutes)->get();
     }
 }

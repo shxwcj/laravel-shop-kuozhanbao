@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bc875cc-5283-456c-ab92-1f4008977658" name="Default Changelist" comment="" />
+    <list default="true" id="8bc875cc-5283-456c-ab92-1f4008977658" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +157,7 @@
       <path value="$PROJECT_DIR$/vendor/rap2hpoutre/laravel-log-viewer" />
       <path value="$PROJECT_DIR$/vendor/itsgoingd/clockwork" />
       <path value="$PROJECT_DIR$/vendor/orangehill/iseed" />
+      <path value="$PROJECT_DIR$/vendor/watson/rememberable" />
     </include_path>
   </component>
   <component name="ProjectId" id="1e4oO9CUE9AKXFYwZl4tV6igF3c" />
@@ -188,7 +197,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593590190813</updated>
-      <workItem from="1593590192006" duration="39875000" />
+      <workItem from="1593590192006" duration="41787000" />
     </task>
     <servers />
   </component>

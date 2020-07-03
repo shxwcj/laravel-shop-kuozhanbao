@@ -22,6 +22,7 @@
         "rap2hpoutre/laravel-log-viewer": "^1.6",
         "spatie/laravel-backup": "^6.11",
         "vinkla/hashids": "6.0.0",
+        "watson/rememberable": "3.*",
         "yansongda/pay": "^2.5"
     },
     "require-dev": {
