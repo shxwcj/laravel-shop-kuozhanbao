@@ -12,8 +12,9 @@
 */
 
 
+use Illuminate\Support\Facades\Route;
+
 Route::redirect('/', '/products')->name('root');
-Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products', 'ProductsController@index')->name('products.index');
 
 Auth::routes(['verify' => true]);
@@ -53,3 +54,7 @@ Route::post('payment/wechat/refund_notify', 'PaymentController@wechatRefundNotif
 //查看日志
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 Route::get('users', 'UserController@index')->name('users.index');
+//显示 pdf
+Route::get('pdf/products/{product}', 'ProductsController@pdf')->name('products.show.pdf');
+//显示  Image
+Route::get('image/products/{product}', 'ProductsController@image')->name('products.show.image');

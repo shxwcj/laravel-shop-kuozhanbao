@@ -18,7 +18,7 @@ class UserTest extends TestCase
     {
         $response = $this->withHeaders([
             'X-Header' => 'Value',
-        ])->json('GET','/users',['name' => 'cookie']);
+        ])->get('/users',['name' => 'cookie']);
 
         $response->assertStatus(200)->assertJson([ 'created' => true]);
 

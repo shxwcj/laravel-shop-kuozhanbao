@@ -134,6 +134,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/watson/rememberable" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wemersonjanuario/laravelpdf" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wemersonjanuario/pdf" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/pay" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/supports" />
     </content>

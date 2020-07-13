@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Exceptions\InvalidRequestException;
 use App\Models\OrderItem;
 use App\Models\Product;
+use Barryvdh\Snappy\Facades\SnappyImage;
 use Illuminate\Http\Request;
+use PDF;
 
 class ProductsController extends Controller
 {
@@ -116,5 +118,37 @@ class ProductsController extends Controller
         $products = $request->user()->favoriteProducts()->paginate(16);
 
         return view('products.favorites', ['products' => $products]);
+    }
+
+    //快速生成pdf
+    public function pdf(Product $product)
+    {
+//        $options = [
+//            'footer-center' => '123【中文页脚】asd',
+//            'footer-font-size' => 8,
+//            'footer-spacing' => 5,
+//            //   'footer-font-name' =>'Arial'
+//        ];
+
+        return PDF::loadView('products.show', [
+            'product' => $product,
+            'favored' => [],
+            'reviews' => []
+            ])
+//            ->setOptions($options)
+            ->inline('products-' .$product->id. '.pdf');
+    }
+
+    //快速生成Image图片
+    public function image(Product $product)
+    {
+        return SnappyImage::loadView('products.show', [
+            'product' => $product,
+            'favored' => [],
+            'reviews' => []
+        ])
+            ->setOption('width', 595)
+            ->setOption('format', 'png')
+            ->inline('products-' .$product->id. '.png');
     }
 }
