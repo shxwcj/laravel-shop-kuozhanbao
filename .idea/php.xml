@@ -139,6 +139,7 @@
       <path value="$PROJECT_DIR$/vendor/h4cc/wkhtmltoimage-amd64" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/chumper/zipper" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

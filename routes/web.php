@@ -58,3 +58,17 @@ Route::get('users', 'UserController@index')->name('users.index');
 Route::get('pdf/products/{product}', 'ProductsController@pdf')->name('products.show.pdf');
 //显示  Image
 Route::get('image/products/{product}', 'ProductsController@image')->name('products.show.image');
+
+
+// package chumper/zipper
+//显示日志列表
+Route::get('zip', 'ZipController@index')->name('zip.index');
+//处理批量下载
+Route::post('zip/download', 'ZipController@download')->name('zip.download');
+//处理 Zip 文件上传和解压
+Route::post('zip/upload', 'ZipController@upload')->name('zip.upload');
+
+
+
+
+
