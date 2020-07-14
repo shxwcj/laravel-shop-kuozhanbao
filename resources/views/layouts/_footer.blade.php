@@ -5,5 +5,7 @@
     </p>
 
     <p class="float-right"><a href="mailto:name@email.com">联系我们</a></p>
+
+    <p class="float-right" style="margin-right: 20px"> 来自: {{$location}}</p>
   </div>
 </footer>
